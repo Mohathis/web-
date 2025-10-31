@@ -2,6 +2,7 @@
 <head>
 <title>calender</title>
 <style>
+
 #calendar{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -27,12 +28,12 @@ table {
     
 </style>
 </head>
-<body bgcolor="skyblue">
+<body bgcolor="skyblue"><center>
     <h2>Generate Calendar for a Year</h2>
     <p>Enter the year:</p>
     <input type="number" id="yearInput" >
     <button onclick="generateCalendar()">Generate Calendar</button>
-    <div id="calendar"></div>
+    <div id="calendar"></div></center>
 
   <script>
     function generateCalendar() {
@@ -84,6 +85,7 @@ for (let month = 0; month < 12; month++) {
     calendarDiv.innerHTML += monthHTML;
     }
     }
+   
   </script>
 </body>
 </html>
