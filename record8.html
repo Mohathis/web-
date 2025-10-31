@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>mouse</title>
+</head>
+<body>
+<center><button type="button" onclick="clrbtn();">change background color</button></center>
+<script>
+var colors=["blue","red","yellow","green","teal","skyblue","black"];
+var i=0;
+
+function clrbtn()
+{
+ document.body.style.backgroundColor=colors[i];
+ i=(i+1)%colors.length;
+}
+</script>
+</body>
+</html>
