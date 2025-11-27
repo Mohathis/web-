@@ -22,8 +22,8 @@ th, td { padding: 6px; text-align: left; border: 1px solid #ccc; }
   <form method="post" action="">
     <label for="name">Name:</label>
     <input type="text" name="name" id="name" required>
-    <label for="consumerId">Consumer No:</label>
-    <input type="text" name="consumerId" id="consumerId" required>
+    <label for="consumerNo">Consumer No:</label>
+    <input type="text" name="consumerNo" id="consumerNo" required>
     <label for="currentReading">Unit consumed:</label>
     <input type="number" name="currentReading" id="currentReading" required>
     <input type="submit" value="Generate">
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h3>ELECTRICITY BILL</h3>
             </div>
             <table>
-                <tr><td><strong>Consumer No:</strong> $consumerId</td></tr>
+                <tr><td><strong>Consumer No:</strong> $consumerNo</td></tr>
                 <tr><td><strong>Name:</strong> $name</td></tr>
                                 <tr><td><strong>Bill Period:</strong> $billFromDate to $billToDate</td></tr>
                                <tr><td><strong>Issue Date:</strong>  $billToDate</td></tr> 
